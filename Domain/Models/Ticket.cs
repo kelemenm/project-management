@@ -8,5 +8,6 @@ public class Ticket : BaseEntity
     public TicketStatus Status { get; set; }
     public User User { get; set; }
     public Project Project{ get; set; }
-    public ICollection<AttachmentFile> Attachments { get; set; }
+    public ICollection<AttachmentFile> Attachments { get; set; } = [];
+    public ICollection<Comment> Comments{ get; set; } = [];
 }
